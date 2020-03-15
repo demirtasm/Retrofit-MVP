@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/cardViewSizeMiddle"
+        android:layout_height="@dimen/cardViewSizeMiddle"
+        app:cardCornerRadius="@dimen/spasifikLittleSize">
+
+        <ImageView
+            android:id="@+id/imgCategory"
+            android:layout_width="@dimen/imgSizeMiddle"
+            android:layout_height="@dimen/imgSizeMiddle"
+            android:tint="@color/colorBlackBlue"
+            android:scaleType="centerCrop"
+            app:srcCompat="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/tvCategoryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="100dp"
+            android:text="TextView"
+            android:textColor="@color/LightBej"
+            android:textStyle="bold"
+            app:fontFamily="@font/aclonica" />
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="70dp"
+    tools:context=".view.ExploreFragment">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewExplore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:id="@+id/dotsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="170dp"
+                android:gravity="center"
+                android:orientation="horizontal"></LinearLayout>
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="191dp"></androidx.viewpager.widget.ViewPager>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/viewSize"
+                android:layout_below="@id/recyclerViewExplore"
+                android:layout_marginTop="@dimen/spasifikMiddleSize"
+                android:background="@color/orange" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tvNewProducts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spasifikLittleSize"
+                    android:fontFamily="@font/aldrich"
+                    android:includeFontPadding="false"
+                    android:text="En Yeni Ürünler"
+                    android:textColor="@color/orange" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewExploreProducts"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/spasifikLittleSize">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <TextView
+                    android:id="@+id/textViewCategories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spasifikLittleSize"
+                    android:fontFamily="@font/aldrich"
+                    android:text="Kategoriler"
+                    android:textColor="@color/orange" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewCategories"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/spasifikLittleSize">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spasifikLittleSize"
+                    android:fontFamily="@font/aldrich"
+                    android:text="Koleksiyonlar"
+                    android:textColor="@color/orange" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/spasifikLittleSize"
+                    app:cardCornerRadius="@dimen/spasifikLittleSize">
+
+                    <ImageView
+                        android:id="@+id/imgCollections"
+                        android:layout_width="300dp"
+                        android:layout_height="120dp"
+                        android:scaleType="centerCrop"
+                        android:src="?attr/actionModeSplitBackground"
+                        android:tint="@color/tintColorBrown" />
+
+                    <TextView
+                        android:id="@+id/tvGiftSuggestions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="TextView"
+                        android:textColor="@color/LightBej"
+                        android:textStyle="bold"
+                        app:fontFamily="@font/aclonica" />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

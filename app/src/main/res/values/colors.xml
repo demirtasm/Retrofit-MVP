@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f9cdad</color>
+    <color name="colorPrimaryDark">#f9cdad</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="bej">#f8ecc9</color>
+    <color name="DarkBej">#f9cdad</color>
+    <color name="LightBej">#D8E6E7</color>
+    <color name="orange">#CA6A14</color>
+    <color name="tintColorBrown">#40694A1D</color>
+    <color name="colorBlackBlue">#402C6F69</color>
+</resources>

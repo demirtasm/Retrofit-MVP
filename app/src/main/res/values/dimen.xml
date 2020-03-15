@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="defoultSize">0dp</dimen>
+    <dimen name="spasifikLittleSize">5dp</dimen>
+    <dimen name="spasifikMiddleSize">15dp</dimen>
+
+    <!-- TODO: Customize your dimen view. -->
+    <dimen name="viewSize">2dp</dimen>
+
+    <!-- TODO: Customize your text here. -->
+
+    <dimen name="textSizeBig">24sp</dimen>
+
+    <!-- TODO: Customize your image here. -->
+    <dimen name="imgSizeBig">150dp</dimen>
+    <dimen name="imgSizeMiddle">130dp</dimen>
+
+    <!-- TODO: Customize your card View here. -->
+    <dimen name="cardViewSizeMiddle">130dp</dimen>
+
+</resources>

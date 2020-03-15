@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:cardCornerRadius="5dp"
+        app:cardBackgroundColor="#f9cdad"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgProductsShop"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:scaleType="centerCrop"
+                    android:tint="#402C6F69"
+                    app:srcCompat="@color/LightBej" />
+
+                <TextView
+                    android:id="@+id/tvExploreProductsTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvExploreProductsName"
+                    android:singleLine="true"
+                    android:text="tvExploreProductsTitle"
+                    android:textColor="@color/LightBej"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/aclonica" />
+
+                <TextView
+                    android:id="@+id/tvExploreProductsName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="110dp"
+                    android:singleLine="true"
+                    android:text="tvExploreProductsName"
+                    android:textColor="@color/LightBej"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/architects_daughter" />
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                app:cardBackgroundColor="#c8c8a9">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="tvPrice"
+                        app:fontFamily="@font/bitter" />
+
+                    <TextView
+                        android:id="@+id/tvOldPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:paddingStart="10dp"
+                        android:text="tvOldPrice"
+                        android:paddingLeft="10dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

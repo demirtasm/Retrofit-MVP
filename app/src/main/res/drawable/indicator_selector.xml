@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/selector_indicator"
+    android:state_selected="true"
+    android:innerRadius="0dp"
+    android:shape="ring"
+    android:thickness="4dp"
+    android:useLevel="false">
+    <size
+        android:width="14dp"
+        android:height="36dp" />
+    <solid android:color="@color/cardview_dark_background" />
+
+</shape>
